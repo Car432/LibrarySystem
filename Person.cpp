@@ -1,6 +1,28 @@
 #include <iostream>
+#inlucde "person.h"
 
-int main(){
+Person::Person()
+{
 
-  std::cout<< "hi";
+}
+
+string::getName{
+
+}
+
+void::setName{
+
+}
+
+string::getAddress{
+
+}
+void::setAddress{
+
+}
+string::getEmail{
+
+}
+void::setEmail{
+
 }
