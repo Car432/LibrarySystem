@@ -1,28 +1,41 @@
 #include <iostream>
-#inlucde "person.h"
+#include "Person.h"
+#include <string>
 
-Person::Person()
+Person::Person(std::string newName, std::string newAddress, std::string NewEmail)
+{
+    this->name =newName;
+    this->address = newAddress;
+    this->email=NewEmail;
+}
+
+std::string Person::GetName()
 {
 
+    return name;
 }
 
-string::getName{
-
+void Person::SetName(std::string newName)
+{
+    name = newName;
 }
 
-void::setName{
-
+std::string Person::GetAddress()
+{
+    return address;
 }
 
-string::getAddress{
-
+void Person::SetAddress(std::string newAddress)
+{
+    address = newAddress;
 }
-void::setAddress{
 
+std::string Person::GetEmail()
+{
+    return email;
 }
-string::getEmail{
 
-}
-void::setEmail{
-
+void Person::SetEmail(std::string NewEmail)
+{
+    email = NewEmail;
 }
