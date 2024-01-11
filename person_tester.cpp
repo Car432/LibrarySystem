@@ -1,10 +1,12 @@
 #include <iostream>
 #include "Person.h"
+#include "Librarian.h"
 
 int main()
 {
-  Person person("e", "s" , "ww");
+  Librarian librarian("dave", "245" , "dv@gmail", 1, 4);
 
-    std::cout<<person.GetAddress();
+    std::cout<<librarian.getName();
+
   
 }

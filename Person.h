@@ -7,17 +7,17 @@ class Person {
  public:
 
    
-   Person(std::string newName, std::string newAddress, std::string NewEmail);
 
-   std::string GetName();
+   std::string getName();
    
-   void SetName(std::string newName);
+   void setName(std::string newName);
 
-   std::string GetAddress();
-   void SetAddress(std::string newAddress);
+   std::string getAddress();
+   void setAddress(std::string newAddress);
 
-   std::string GetEmail();
-   void SetEmail(std::string NewEmail);
+   std::string getEmail();
+   void setEmail(std::string NewEmail);
+ 
  
  private:
 
