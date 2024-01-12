@@ -1,14 +1,14 @@
-#include "Librarian.h"
+#include "Member.h"
+#include "Book.h"
 
-Librarian::Librarian(int staffid, std::string name, std::string address, std::string email, int salary)
+Member::Member(int memberID, std::string name,  std::string address , std::string email)
 {
+    this->memberid = memberID;
     this->setName(name);
     this->setAddress(address);
     this->setEmail(email);
-    this->setStaffID(staffid);
-    this->setSalary(salary);
-}
 
+}
 
 std::string Person::getName()
 {
@@ -41,27 +41,15 @@ void Person::setEmail(std::string email)
     this->email = email;
 }
 
-int Librarian::getStaffID()
-{
-    return staffid;
+std::string Member::getMemberID(){
+    return std::to_string(memberid);
+};
 
-}
+    
+std::vector<Book> Member::GetBooksBorrowed(){
+    return booksLoned;
+};
 
-void Librarian::setStaffID(int staffID)
-{
-    staffid = staffID;
-
-}
-
-int Librarian::getSalary()
-{
-    return salary;
-
-}
-
-void Librarian::setSalary(int salary)
-{
-    this->salary=salary;
-
-}
-
+void Member::setBooksBorrowed(Book book){
+    //this->booksLoned
+};

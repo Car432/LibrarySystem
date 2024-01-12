@@ -7,7 +7,7 @@ class Librarian : public Person {
 
     public:
 
-    Librarian(std::string newName, std::string newAddress, std::string NewEmail, int newstaffid, int newSalary);
+    Librarian(int newstaffid, std::string newName, std::string newAddress, std::string NewEmail,  int newSalary);
 
     void addMember();
 
@@ -18,7 +18,7 @@ class Librarian : public Person {
     void displayBorrowedBooks(int memberID);
 
     void calcFine(int memberID);
-    
+
 
     //staff id getter and setter
 

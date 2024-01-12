@@ -1,13 +1,7 @@
-#include <iostream>
 #include "Person.h"
 #include <string>
 
-Person::Person(std::string newName, std::string newAddress, std::string NewEmail)
-{
-    this->name =newName;
-    this->address = newAddress;
-    this->email=NewEmail;
-}
+
 
 std::string Person::GetName()
 {
