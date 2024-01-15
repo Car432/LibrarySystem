@@ -9,7 +9,7 @@ class Book{
 
     public:
 
-    Book(int bookID, std::string bookName, std::string authorFirstName, std::string authorLastName);
+    Book(std::string bookID, std::string bookName, std::string authorFirstName, std::string authorLastName);
 
     std::string getbookID();
 
@@ -19,25 +19,25 @@ class Book{
 
     std::string getAuthorLastName();
 
-    time_t getDueDate();
+    int getDueDate();
 
-    void setDueDate(time_t dueDate);
+    void setDueDate(int dueDate);
 
     void returnBook();
 
-    void borrowBook(Member borrower, time_t dueDate);
+    //void borrowBook(Member borrower, time_t dueDate);
 
     private:
 
-    int bookID;
+    std::string bookID;
     std::string bookName;
     std::string authorFirstName;
     std::string authorLastName;
     std::string bookType;
 
-    time_t dueDate;
+    int dueDate;
 
-    Member borrower;
+    //Member borrower;
 
 };
 #endif

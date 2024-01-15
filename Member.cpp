@@ -1,4 +1,4 @@
-
+#include <string>
 #include "Member.h"
 #include "Book.h"
 
@@ -22,5 +22,5 @@ std::vector<Book> Member::GetBooksBorrowed(){
 };
 
 void Member::setBooksBorrowed(Book book){
-    //this->booksLoned
+    this->booksLoned.push_back(book);
 };
