@@ -1,3 +1,4 @@
+
 #include "Member.h"
 #include "Book.h"
 
@@ -10,36 +11,6 @@ Member::Member(int memberID, std::string name,  std::string address , std::strin
 
 }
 
-std::string Person::getName()
-{
-
-    return name;
-}
-
-void Person::setName(std::string name)
-{
-    this->name = name;
-}
-
-std::string Person::getAddress()
-{
-    return address;
-}
-
-void Person::setAddress(std::string address)
-{
-    this->address = address;
-}
-
-std::string Person::getEmail()
-{
-    return email;
-}
-
-void Person::setEmail(std::string email)
-{
-    this->email = email;
-}
 
 std::string Member::getMemberID(){
     return std::to_string(memberid);
