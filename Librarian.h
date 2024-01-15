@@ -1,3 +1,5 @@
+/*Author Carlos Bacchus<cb1521@live.mdx.ac.uk*/
+
 #ifndef _Librarian_H_
 #define _Librarian_H_
 #include <string>
@@ -9,15 +11,8 @@ class Librarian : public Person {
 
     Librarian(int newstaffid, std::string newName, std::string newAddress, std::string NewEmail,  int newSalary);
 
-    void addMember();
-
-    void issueBook(int memberID, int bookID);
-
-    void returnBook(int memberID, int bookID);
-
-    void displayBorrowedBooks(int memberID);
-
-    void calcFine(int memberID);
+    
+    int calcFine(int current,int due);
 
 
     //staff id getter and setter

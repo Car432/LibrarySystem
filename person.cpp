@@ -1,3 +1,5 @@
+/*Author Carlos Bacchus<cb1521@live.mdx.ac.uk*/
+
 #include "Person.h"
 
 std::string Person::getName()

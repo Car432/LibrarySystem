@@ -1,3 +1,5 @@
+/*Author Carlos Bacchus<cb1521@live.mdx.ac.uk*/
+
 #include "Librarian.h"
 
 
@@ -34,6 +36,12 @@ int Librarian::getSalary()
 void Librarian::setSalary(int salary)
 {
     this->salary=salary;
+
+}
+
+int Librarian::calcFine(int current,int due)
+{
+    return current-due;//days passed
 
 }
 

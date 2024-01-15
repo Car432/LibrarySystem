@@ -1,5 +1,5 @@
 output: Library.o Librarian.o Member.o Book.o
-	g++ Library.o Librarian.o Member.o Book.o -o output
+	g++ Library.o Librarian.o Member.o Book.o -o Library
 
 Library.o: Library.cpp
 	g++ -c Library.cpp

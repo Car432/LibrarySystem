@@ -1,3 +1,5 @@
+/*Author Carlos Bacchus<cb1521@live.mdx.ac.uk*/
+
 #ifndef _Person_H_
 #define _Person_H_
 #include <string>

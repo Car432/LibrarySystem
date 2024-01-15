@@ -1,3 +1,5 @@
+/*Author Carlos Bacchus<cb1521@live.mdx.ac.uk*/
+
 #ifndef _Book_H_
 #define _Book_H_
 #include <string>
@@ -25,7 +27,7 @@ class Book{
 
     void returnBook();
 
-    //void borrowBook(Member borrower, time_t dueDate);
+    
 
     private:
 
@@ -37,7 +39,7 @@ class Book{
 
     int dueDate;
 
-    //Member borrower;
+    
 
 };
 #endif

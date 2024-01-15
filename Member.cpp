@@ -1,3 +1,5 @@
+/*Author Carlos Bacchus<cb1521@live.mdx.ac.uk*/
+
 #include <string>
 #include "Member.h"
 #include "Book.h"
@@ -18,9 +20,15 @@ std::string Member::getMemberID(){
 
     
 std::vector<Book> Member::GetBooksBorrowed(){
-    return booksLoned;
+    return this->booksLoned;
 };
 
 void Member::setBooksBorrowed(Book book){
     this->booksLoned.push_back(book);
 };
+
+void Member::RemoveBook(int index){
+    booksLoned.erase(booksLoned.begin()+index);
+}
+
+

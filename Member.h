@@ -1,3 +1,5 @@
+/*Author Carlos Bacchus<cb1521@live.mdx.ac.uk*/
+
 #ifndef _Member_H_
 #define _Member_H_
 #include <string>
@@ -18,6 +20,8 @@ class Member : public Person {
     std::vector<Book> GetBooksBorrowed();
 
     void setBooksBorrowed(Book book);
+
+    void RemoveBook(int index);
 
     private:
 

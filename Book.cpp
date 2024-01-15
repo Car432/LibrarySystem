@@ -1,3 +1,5 @@
+/*Author Carlos Bacchus<cb1521@live.mdx.ac.uk*/
+
 #include "Member.h"
 #include "Book.h"
 #include <string>
@@ -42,9 +44,7 @@ void Book::setDueDate(int dueDate){
     this->dueDate = dueDate;
 };
 
-void Book::returnBook(){
 
-};
 
 
 
